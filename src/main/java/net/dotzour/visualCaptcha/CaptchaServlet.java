@@ -1,20 +1,7 @@
 package net.dotzour.visualCaptcha;
 
-import com.google.common.base.Charsets;
-import com.google.common.hash.Hashing;
-import com.google.common.io.ByteStreams;
-import com.google.common.io.Closeables;
-import com.google.common.net.MediaType;
-import com.google.common.reflect.TypeToken;
-import com.google.gson.GsonBuilder;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import static java.util.Collections.shuffle;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -22,14 +9,29 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import static java.util.Collections.shuffle;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.google.common.base.Charsets;
+import com.google.common.hash.Hashing;
+import com.google.common.io.ByteStreams;
+import com.google.common.io.Closeables;
+import com.google.common.net.MediaType;
+import com.google.common.reflect.TypeToken;
+import com.google.gson.GsonBuilder;
 
 public class CaptchaServlet extends HttpServlet {
 
-    private static final Logger log = LoggerFactory.getLogger(CaptchaServlet.class);
+   private static final long serialVersionUID = 2011079677859486304L;
+   
+   private static final Logger log = LoggerFactory.getLogger(CaptchaServlet.class);
     private static final int DEFAULT_NUM_OPTIONS = 5;
 
     public static final String INIT_PARAM_IMAGE_ASSET_PATH = "image-asset-path";
