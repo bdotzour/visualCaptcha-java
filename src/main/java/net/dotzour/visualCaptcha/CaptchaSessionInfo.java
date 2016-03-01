@@ -5,47 +5,51 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-class CaptchaSessionInfo implements Serializable
-{
-    private List<CaptchaAnswer> choices;
-    private String validChoice;
-    private String fieldName;
-    private String audioFieldName;
-    private CaptchaAnswer audioAnswer;
+public class CaptchaSessionInfo implements Serializable {
 
-    public CaptchaSessionInfo(String fieldName, String validChoice, String audioFieldName, CaptchaAnswer audioAnswer, List<CaptchaAnswer> choices){
-        this.fieldName = fieldName;
-        this.validChoice = validChoice;
-        this.audioFieldName = audioFieldName;
-        this.audioAnswer = audioAnswer;
-        this.choices = new ArrayList<>(choices);
-    }
+   private static final long serialVersionUID = -234659669160894703L;
 
-    public CaptchaSessionInfo(String fieldName, String validChoice, String audioFieldName, CaptchaAnswer audioAnswer, CaptchaAnswer... choices){
-        this.fieldName = fieldName;
-        this.validChoice = validChoice;
-        this.audioFieldName = audioFieldName;
-        this.audioAnswer = audioAnswer;
-        this.choices = Arrays.asList(choices);
-    }
+   private List<CaptchaAnswer> choices;
+   private String validChoice;
+   private String fieldName;
+   private String audioFieldName;
+   private CaptchaAnswer audioAnswer;
 
-    public List<CaptchaAnswer> getChoices() {
-        return choices;
-    }
+   public CaptchaSessionInfo( String fieldName, String validChoice, String audioFieldName, CaptchaAnswer audioAnswer,
+         List<CaptchaAnswer> choices ) {
+      this.fieldName = fieldName;
+      this.validChoice = validChoice;
+      this.audioFieldName = audioFieldName;
+      this.audioAnswer = audioAnswer;
+      this.choices = new ArrayList<>( choices );
+   }
 
-    public String getValidChoice() {
-        return validChoice;
-    }
+   public CaptchaSessionInfo( String fieldName, String validChoice, String audioFieldName, CaptchaAnswer audioAnswer,
+         CaptchaAnswer... choices ) {
+      this.fieldName = fieldName;
+      this.validChoice = validChoice;
+      this.audioFieldName = audioFieldName;
+      this.audioAnswer = audioAnswer;
+      this.choices = Arrays.asList( choices );
+   }
 
-    public String getFieldName() {
-        return fieldName;
-    }
+   public List<CaptchaAnswer> getChoices() {
+      return choices;
+   }
 
-    public String getAudioFieldName() {
-        return audioFieldName;
-    }
+   public String getValidChoice() {
+      return validChoice;
+   }
 
-    public CaptchaAnswer getAudioAnswer() {
-        return audioAnswer;
-    }
+   public String getFieldName() {
+      return fieldName;
+   }
+
+   public String getAudioFieldName() {
+      return audioFieldName;
+   }
+
+   public CaptchaAnswer getAudioAnswer() {
+      return audioAnswer;
+   }
 }
