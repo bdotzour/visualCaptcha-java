@@ -1,150 +1,150 @@
 [
     {
-        "name": "Airplane",
+        "value": "Airplane",
         "path": "airplane.png"
     },
     {
-        "name": "Balloons",
+        "value": "Balloons",
         "path": "balloons.png"
     },
     {
-        "name": "Camera",
+        "value": "Camera",
         "path": "camera.png"
     },
     {
-        "name": "Car",
+        "value": "Car",
         "path": "car.png"
     },
     {
-        "name": "Cat",
+        "value": "Cat",
         "path": "cat.png"
     },
     {
-        "name": "Chair",
+        "value": "Chair",
         "path": "chair.png"
     },
     {
-        "name": "Clip",
+        "value": "Clip",
         "path": "clip.png"
     },
     {
-        "name": "Clock",
+        "value": "Clock",
         "path": "clock.png"
     },
     {
-        "name": "Cloud",
+        "value": "Cloud",
         "path": "cloud.png"
     },
     {
-        "name": "Computer",
+        "value": "Computer",
         "path": "computer.png"
     },
     {
-        "name": "Envelope",
+        "value": "Envelope",
         "path": "envelope.png"
     },
     {
-        "name": "Eye",
+        "value": "Eye",
         "path": "eye.png"
     },
     {
-        "name": "Flag",
+        "value": "Flag",
         "path": "flag.png"
     },
     {
-        "name": "Folder",
+        "value": "Folder",
         "path": "folder.png"
     },
     {
-        "name": "Foot",
+        "value": "Foot",
         "path": "foot.png"
     },
     {
-        "name": "Graph",
+        "value": "Graph",
         "path": "graph.png"
     },
     {
-        "name": "House",
+        "value": "House",
         "path": "house.png"
     },
     {
-        "name": "Key",
+        "value": "Key",
         "path": "key.png"
     },
     {
-        "name": "Leaf",
+        "value": "Leaf",
         "path": "leaf.png"
     },
     {
-        "name": "Light Bulb",
+        "value": "Light Bulb",
         "path": "light-bulb.png"
     },
     {
-        "name": "Lock",
+        "value": "Lock",
         "path": "lock.png"
     },
     {
-        "name": "Magnifying Glass",
+        "value": "Magnifying Glass",
         "path": "magnifying-glass.png"
     },
     {
-        "name": "Man",
+        "value": "Man",
         "path": "man.png"
     },
     {
-        "name": "Music Note",
+        "value": "Music Note",
         "path": "music-note.png"
     },
     {
-        "name": "Pants",
+        "value": "Pants",
         "path": "pants.png"
     },
     {
-        "name": "Pencil",
+        "value": "Pencil",
         "path": "pencil.png"
     },
     {
-        "name": "Printer",
+        "value": "Printer",
         "path": "printer.png"
     },
     {
-        "name": "Robot",
+        "value": "Robot",
         "path": "robot.png"
     },
     {
-        "name": "Scissors",
+        "value": "Scissors",
         "path": "scissors.png"
     },
     {
-        "name": "Sunglasses",
+        "value": "Sunglasses",
         "path": "sunglasses.png"
     },
     {
-        "name": "Tag",
+        "value": "Tag",
         "path": "tag.png"
     },
     {
-        "name": "Tree",
+        "value": "Tree",
         "path": "tree.png"
     },
     {
-        "name": "Truck",
+        "value": "Truck",
         "path": "truck.png"
     },
     {
-        "name": "T-Shirt",
+        "value": "T-Shirt",
         "path": "t-shirt.png"
     },
     {
-        "name": "Umbrella",
+        "value": "Umbrella",
         "path": "umbrella.png"
     },
     {
-        "name": "Woman",
+        "value": "Woman",
         "path": "woman.png"
     },
     {
-        "name": "World",
+        "value": "World",
         "path": "world.png"
     }
 ]
